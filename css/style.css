@@ -1,0 +1,547 @@
+/***************** start global ***************/
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box
+}
+
+.container {
+margin: 0 auto;
+width: 1170px;
+padding: 15px 15px
+
+}
+
+:root {
+
+--main-color:#9E8157
+}
+
+body button {
+background-color: var(--main-color);
+color:#fff;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+width: 150px;
+height: 40px;
+border: 1px solid var(--main-color);
+border-radius: 5px;
+transition: .5s ease-in-out;
+cursor:pointer
+
+}
+
+
+body button:hover {background-color: #735933;}
+
+body{height: 5000px}
+/***************** end global ***************/
+
+
+html {
+scroll-behavior: smooth;
+}
+
+/************************ start head ***********************/
+.head {
+height: 800px;
+background-image:  linear-gradient(0deg, #000, 40% , rgba(0, 0, 0, 0.5)), url(../images/scorsese.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.head .navbar h2 {
+color: var(--main-color);
+font-size: 75px;
+font-family: 'Italianno', cursive;
+}
+
+.head .caption{
+text-align: left;
+position: absolute;
+left: 50%;
+top:40%
+}
+
+.head .caption h1 {
+color: #fff;
+font-family:'Times New Roman', Times, serif;
+font-size: 60px
+}
+
+.head .caption p {
+color: var(--main-color);
+font-size: 40px;
+font-style: italic;
+}
+
+.head a {
+
+height:50px;
+width: 50px;
+padding: 5px 10px;
+border: 1px solid #999;
+border-radius: 50%;
+position: absolute;
+left:50%;
+top:88%;
+margin-bottom: 15px;
+cursor: pointer;
+transition: .5s ease;
+}
+
+
+
+.head .fa-angle-down {
+color:#fff;
+font-size: 40px;
+
+}
+
+
+.head a:hover {
+background-color: var(--main-color);
+}
+/************************ end head ***********************/
+
+
+/********************* start aboute me *********************/
+.about-me{
+height: 700px;
+position:relative;
+background-image: linear-gradient(60deg, #000, 50%, rgba(0,0,0,.5)), url(../images/scorsese4.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+clear:both;
+overflow: hidden;
+
+}
+
+.about-me .infos {
+position: absolute;
+top: 35%;
+left: 50%;
+width: 25%
+}
+
+.about-me h2{
+color:#fff;
+font-size: 70px;
+font-family:'Italianno', cursive ;
+}
+
+.about-me .infos p {
+color:var(--main-color);
+font-size: 28px
+}
+
+.about-me img {
+height: 100px;
+width: 100px;
+margin-top: 30px
+}
+
+
+/********************* end aboute me *********************/
+
+
+/********************* start my work *********************/
+
+/*********start up**********/
+.my-work {background-color:#181818; padding: 100px 0}
+
+.my-work .main-box {
+text-align: center;
+overflow: hidden;
+
+}
+
+.my-work .main-box span {position: relative}
+
+
+.my-work .main-box span:before{
+content:"";
+width: 400px;
+top:50%;
+left:-444px;
+height:2px;
+position: absolute;
+background-color: #fff
+}
+
+.my-work .main-box .up h2 {margin-bottom: 20px; font-size: 50px; color: #fff}
+.my-work .main-box .up span {color: var(--main-color); }
+
+.my-work .main-box .up span:after{
+content:"";
+width: 400px;
+top:50%;
+left:229px;
+height:2px;
+position: absolute;
+background-color:#fff
+}
+/*************end up**********/
+
+/*************** start down *********/
+.my-work .main-box .down {
+margin-top: 20px;
+text-align: center;
+position: relative;
+padding: 10px
+
+}
+
+.my-work .main-box .down div {
+float: right;
+border: 2px solid #fff;
+width: 31%;
+overflow: hidden;
+margin: 0px 15px 15px 0px
+
+}
+.my-work .main-box .down img {
+
+width:360px;
+height: 500px;
+transition: all .5s ease-in-out
+}
+
+
+.my-work .main-box .down .img-box1,.img-box2,.img-box3,
+.img-box4,.img-box5,.img-box6 {position: relative;}
+
+
+.my-work .main-box .down .img-box1 .overlay,
+.my-work .main-box .down .img-box2 .overlay,
+.my-work .main-box .down .img-box3 .overlay,
+.my-work .main-box .down .img-box4 .overlay,
+.my-work .main-box .down .img-box5 .overlay,
+.my-work .main-box .down .img-box6 .overlay
+{
+width: 100%;
+height: 100%;
+left:0;
+top:0;
+color: #fff;
+background-image:linear-gradient(to top, #000000, 90%, rgba(0,0,0,0));
+transform: translateY(350px);
+position: absolute;
+z-index: 1000;
+transition: all.5s ease-in-out
+
+} 
+
+.my-work .main-box .down .img-box1 .overlay img,
+.my-work .main-box .down .img-box2 .overlay img,
+.my-work .main-box .down .img-box3 .overlay img,
+.my-work .main-box .down .img-box4 .overlay img,
+.my-work .main-box .down .img-box5 .overlay img,
+.my-work .main-box .down .img-box6 .overlay img
+{width:70px; height:50px; margin-top:50%}
+
+.my-work .main-box .down div:hover img {transform: scale(1.2, 1.3)}
+.my-work .main-box .down div:hover .overlay {transform: translateY(200px);}
+
+
+.my-work button {
+position: absolute;
+left: 47%;
+background-color: var(--main-color);
+color:#fff;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+width: 150px;
+height: 40px;
+border: 1px solid var(--main-color);
+border-radius: 5px;
+margin-top: 15px;
+cursor: pointer
+}
+
+
+/****************end down*************/
+/********************* end my work *********************/
+
+/****************start awards **************************/
+
+.awards{
+
+height : 800px;
+padding: 0;
+background-image:url(../images/mymovies.jpg);
+text-align: center
+}
+
+.awards .awards-overlay{
+height:100%;
+width:100%;
+background-color: #000000e3;
+
+}
+
+.awards h2 {
+color: #fff;
+margin-top:70px;
+font-size: 50px;
+}
+
+
+
+.awards h2 ~ p {
+margin: 15px 15px;
+font-size: 30px;
+color: var(--main-color)
+
+}
+
+.awards .awards-box{
+text-align: center;
+padding: 15px;
+width: 100%
+}
+
+.awards .oscar-card {
+text-align:center;
+float: left;
+border: 1px solid transparent;
+border-radius: 30px;
+margin: 10px;
+width: 31%;
+overflow: hidden;
+}
+
+.awards .oscar-card .oscar-img {
+width: 100%;
+border-top-left-radius: 100px;
+position: relative;
+z-index: 2;
+}
+
+.awards .oscar-card .oscar-img img {
+margin: 0;
+height: 250px;
+width: 100%;
+transform: translateY(100px);
+object-fit: cover;
+transition: all .5s ease-in-out
+}
+
+.awards .oscar-card .oscar-disc {
+width: 100%;
+padding: 10px ;
+background-color: var(--main-color);
+border-bottom-left-radius: 30px;
+border-bottom-right-radius: 30px;
+text-align: center;
+position: relative;
+z-index: 1;
+top:-5px;
+transform: translateY(-131px);
+transform-origin: top;
+transition: all .5s ease-in-out
+}
+
+
+
+.awards .oscar-card .oscar-disc img {
+height: 100px;
+width: 100px;
+margin: 10px 15px
+}
+
+.awards .oscar-card .oscar-disc p {
+font-size: 16px;
+font-family: Arial, Helvetica, sans-serif;
+color:#fff
+
+}
+
+.awards .oscar-card:hover .oscar-img img {transform: translateY(0);}
+
+.awards .oscar-card:hover .oscar-disc {transform: translateY(0);}
+/****************end awards **************************/
+
+/********************start testimonilas ***************/
+.testimonials {
+padding: 100px;
+background-color: #333;
+text-align:center;
+}
+
+.testimonials .quote {
+margin-top: 60px;
+}
+
+.testimonials-main-box {
+padding: 20px;
+} 
+
+
+.testimonials .quote img{
+width: 100px;
+height: 100px;
+border: 1px solid #ffffff85;
+border-radius: 50%;
+
+}
+
+.testimonials-box {
+margin: 20px;
+padding: 40px;
+position: relative;
+transition: .4s ease;
+}
+
+.testimonials-box p {
+color: var(--main-color);
+font-size: 25px;
+margin: 20px auto;
+width: 50%;
+line-height: 35px;
+
+}
+
+
+.testimonials-box img {
+width: 100px;
+height: 100px;
+border-radius: 50%;
+object-fit: cover;
+}
+
+.testimonials-box h3 {
+color :#fff;
+margin-top: 15px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.testimonials-main-box .slider .cir {
+display: inline-block;
+width: 20px;
+height: 20px;
+margin:10px;
+border:1px solid var(--main-color);
+border-radius:50%;
+cursor:pointer
+}
+
+.active {
+background-color: var(--main-color);
+
+}
+/********************end testimonilas ***************/
+
+/******************** start glllery******************/
+
+.gallery {
+background-color: #222;
+text-align: center;
+padding: 50px 0
+
+}
+
+.gallery h2 {
+color: #fff;
+font-size: 50px;
+}
+
+.gallery p {
+color: var(--main-color);
+margin-top: 15px;
+font-size: 30px;
+}
+
+.gallery .gallery-box {
+margin-top: 25px
+
+}
+
+
+.gallery .gallery-box img {
+width: 280px;
+height: 200px;
+border: 1px solid #999;
+padding: 3px;
+background-color: #fff;
+object-fit: fill;
+filter: grayscale(2);
+transition: .4s ease
+}
+
+
+.gallery .gallery-box img:hover {
+filter: grayscale(0) ;
+}
+
+.gallery button {
+margin-top: 50px;
+width: 80x;
+height: 40px;
+padding: 10px;
+border:none;
+color:#fff;
+font-family: Arial, Helvetica, sans-serif;
+background-color: var(--main-color)
+}
+/******************** end gallery********************/
+
+/************************** strat footer ******************/
+footer {    
+text-align: center;
+padding: 50px;
+background-color: #111;
+}
+
+footer h3 {
+font-size: 40px;
+margin-bottom: 50px;
+color: #fff
+}
+
+footer input {
+height: 42px;
+width: 300px;
+padding: 10px;
+color: #999;
+border: 1px solid #999;
+background: transparent;
+font-family: Arial, Helvetica, sans-serif;
+outline:none
+
+}
+
+footer button {
+background-color: var(--main-color);
+height: 42px;
+padding: 8px;
+color: #fff;
+border: 1px solid var(--main-color);
+border-radius: 0;
+outline: none;
+font-family: Arial, Helvetica, sans-serif;
+transition: .3s ease
+}
+
+footer button:hover {
+background-color: #735933;
+}
+
+footer ul {
+list-style: none;
+margin-top: 50px;
+color: #999
+}
+
+footer ul li {
+display: inline-block;
+margin: 10px;
+font-size: 25px;
+cursor:pointer;
+transition: .3s ease
+}
+
+footer ul li:hover {
+color: var(--main-color)
+}
+/*********************** end footer***********************/
